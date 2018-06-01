@@ -1,33 +1,34 @@
 <template>
-  <div class='login-wrapper'>
-    <div class="login-form">
-      <login-form></login-form>
-    </div>
+<div class="content-wrapper">
+  <div class="content">
+    <login-form></login-form>
   </div>
+  <Footer></Footer>
+</div>
 </template>
 
 <script>
+import Footer from '@/components/Footer'
 import LoginForm from '@/components/LoginForm'
 export default {
   name: 'Login',
   components: {
-    LoginForm
+    LoginForm,
+    Footer
   }
 }
 </script>
 
 <style scoped>
-.login-wrapper{
-  width: 100%;
-  height: 92vh;
-  position: relative;
-  /*text-align: center;*/
-}
-.login-form{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -175px;
-  margin-top: -150px;
-}
+  .content-wrapper{
+    width: 100%;
+    background: steelblue;
+    display: flex;
+    /* css3新单位vh表示屏幕高度 */
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .content {
+    flex: 1;
+  }
 </style>

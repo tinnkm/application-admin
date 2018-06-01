@@ -1,21 +1,25 @@
 <template>
-  <div class='form-wrapper'>
-    <i-card class="form-box">
-      <div>
-        <h3 class="form-title">Welcome!</h3>
-        <i-form class="form">
-          <i-input>
-            <span slot='prepend'><i-icon type='person'></i-icon></span>
-          </i-input>
-          <br>
-          <i-input>
-            <span slot='prepend'><i-icon type='locked'></i-icon></span>
-          </i-input>
-          <br>
-          <i-button type='primary' shape='circle' long>登&nbsp;&nbsp;录</i-button>
-        </i-form>
+  <div class='login-wrapper'>
+    <div class="login-form">
+      <div class='form-wrapper'>
+        <i-card class="form-box">
+          <div>
+            <h3 class="form-title">Welcome!</h3>
+            <i-form class="form">
+              <i-input>
+                <span slot='prepend'><i-icon type='person'></i-icon></span>
+              </i-input>
+              <br>
+              <i-input>
+                <span slot='prepend'><i-icon type='locked'></i-icon></span>
+              </i-input>
+              <br>
+              <i-button type='primary' shape='circle' long>登&nbsp;&nbsp;录</i-button>
+            </i-form>
+          </div>
+        </i-card>
       </div>
-    </i-card>
+    </div>
   </div>
 </template>
 
@@ -26,6 +30,19 @@ export default {
 </script>
 
 <style scoped>
+  .login-wrapper{
+    width: 100%;
+    height: 92vh;
+    position: relative;
+    /*text-align: center;*/
+  }
+  .login-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -175px;
+    margin-top: -150px;
+  }
   .form-wrapper{
     width: 100%;
     height: 100%;

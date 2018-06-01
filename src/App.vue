@@ -1,32 +1,18 @@
 <template>
-  <div class="content-wrapper">
-    <div class="content">
-      <router-view/>
-    </div>
-    <Footer></Footer>
-  </div>
+  <!-- todo:目前只是为了方便调试所以才有这个入口，之后入口需改为登陆页，其他页面均通过登陆也作为入口，由其发起跳转 -->
+<router-view/>
 </template>
 
 <script>
-import Footer from '@/components/Footer'
+
 export default {
   name: 'App',
   components: {
-    Footer
+    // Footer
   }
 }
 </script>
 
 <style scoped>
-.content-wrapper{
-  width: 100%;
-  background: steelblue;
-  display: flex;
-  /* css3新单位vh表示屏幕高度 */
-  min-height: 100vh;
-  flex-direction: column;
-}
-.content {
-  flex: 1;
-}
+
 </style>

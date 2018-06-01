@@ -12,7 +12,8 @@ export default {
 .footer{
   font-size: small;
   color: darkgrey;
-  margin-bottom: 5vh;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
   text-align: center;
 }
 </style>
